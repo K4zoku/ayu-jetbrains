@@ -1,0 +1,32 @@
+<idea-plugin>
+  <id>me.kazoku.ayu.jetbrains</id>
+  <name>Ayu Dark</name>
+  <version>0.1.0</version>
+  <vendor email="kazoku0356@gmail.com" url="https://github.com/K4zoku">K4zoku</vendor>
+
+  <description>
+    <![CDATA[
+      Bring ayu dark to your JetBrains IDEs. Made with love by K4zoku.
+    ]]>
+  </description>
+q
+  <!-- See http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for details.-->
+  <idea-version since-build="191.0"/>
+
+  <!--
+  See http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html on how to target
+  different products
+  Using `com.intellij.modules.lang` enables support for all products.
+  -->
+  <depends>com.intellij.modules.lang</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <themeProvider id="2d704cfb-3c26-4fda-bd3f-74512f72f86a" path="/ayu_dark.theme.json"/>
+    <bundledColorScheme path="/themes/ayu_dark.xml"/>
+  </extensions>
+
+  <actions>
+
+  </actions>
+
+</idea-plugin>
